@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <title>HTML, CSS and SASS Boilerplate</title>
-    <meta
-      name="description"
-      content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev"
-    />
+    <meta name="description" content="Used as a boilerplate for tasks in the 'HTML, CSS and SASS' course in boom.dev" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="main">
-      <div class="emoji mb-6">💣🤯💥</div>
-      <button class="button">Boom?</button>
+        <div class="emoji mb-6">💣🤯💥</div>
+        <button class="button">Boom?</button>
+        <form>
+            <input type="text" id="name" name="project-name" class="input" minlength="20" required>
+            <input type="text" id="name-slug" name="name-slug" class="input" pattern="^[^_\s0-9]*$" required>
+            <input type="number" id="number-of-contributers" name="number-of-contributers" min="1" max="100" class="input" required>
+            <input type="number" id="maximum-number-of-branches" name="maximum-number-of-branches" min="1" max="100" class="input" required>
+            <input type="submit" class="input">
+        </form>
     </div>
-  </body>
+</body>
+
 </html>
